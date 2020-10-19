@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Ứng dụng quản lý sản phẩm sử dụng hàm</title>
+    <style>
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        td{
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<h2>Add New Product</h2>
+<input type="text" id="newProduct" placeholder="New Product">
+<button onclick="addProduct(newProduct.value)">Add</button>
+<h3>Product Name</h3>
+<p id="productCount">Product</p>
+<table id="productTable"></table>
+<script src="index.js"></script>
+</body>
+</html>
