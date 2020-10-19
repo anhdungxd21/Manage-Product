@@ -54,9 +54,16 @@ function editProduct(index,isEdit) {
 }
 function inputArea(inputElement,inputValue) {
     inputElement.addEventListener("keyup",function (){
+        console.log(inputChange)
+        //console.log(inputValue);
         if (event.keyCode === 13){
             if (inputValue !=""){
+                // console.log("Enter");
+                // console.log(inputValue+" inputValue "+inputChange)
                 productArr.splice(inputChange,1,inputValue);
+                console.log(productArr);
+                editProduct(-1);
+            }else {
                 editProduct(-1);
             }
         }
