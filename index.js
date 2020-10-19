@@ -46,7 +46,7 @@ function editProduct(index,isEdit) {
     inputChange = index;
     let inputEdit
     if (isEdit) {
-        inputEdit = `<input type='text' id='input${index}' oninput="inputArea(this,this.value)" placeholder="Enter change or leave blank">`
+        inputEdit = `<input type='text' id='input${index}' onchange="inputArea(this,this.value)" placeholder="Enter change or leave blank">`
     }else {
         inputEdit ='';
     }
